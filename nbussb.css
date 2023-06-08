@@ -1,0 +1,801 @@
+/*!
+ * Responsive v1.0.2
+ * Copyright 2023 NBU Uni.
+ * Last Update on 2023-06-06.
+ * Last Update By Dr. Yazan A. Alsariera
+ * Licensed under NBU
+ * https://banner.yznss.com/css/nbussb.css
+ * /css/nbussb.css
+ */
+
+@charset "UTF-8";
+
+/* @import url(../../fonts/NeoSans/NeoSans.css);
+@import url(../../fonts/Cairo/Cairo.css);
+
+.neo-sans-arabic{font-family: 'Neo Sans Arabic', serif;}
+.cairo{font-family: 'Cairo', serif;} */
+
+@import url(https://fonts.cdnfonts.com/css/neo-sans-arabic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+Arabic);
+@import url(https://fonts.googleapis.com/css?family=Cairo);
+
+
+
+:root {
+  --bs-green: #337C3D;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #0E6835;
+  --bs-teal: #20c997;
+  --bs-cyan: #659D43;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #337C3D;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #659D43;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: "Neo Sans Arabic", "Neo Sans", "Noto Sans Arabic", Cairo, Tahoma, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+@media (prefers-reduced-motion:no-preference) {
+    :root {
+        scroll-behavior: smooth
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--bs-font-sans-serif);
+  background-color: #ffffff;
+}
+
+body {
+  direction: rtl;
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* display: flex; */
+  min-height: 100vh;
+  /* flex-direction: column; */
+    /* background: url('/css/images/archive/nbub.jpg') no-repeat, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover; */
+  min-height: 100vh;
+  background-blend-mode: overlay;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 100px;
+  clear: both;
+}
+
+
+
+.headerwrapperdiv{
+  min-height: 150px;
+  background-color: var(--bs-primary);
+  padding-right: 25px;
+  padding-top: 25px;
+  background-image: url(img/logo-nbu-dar.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position-x: right;
+}
+
+/* .pageheaderdiv1{
+  min-height: 50px;
+  background-color: var(--bs-indigo);
+} */
+
+/* .headerlinksdiv {
+  min-height: 50px;
+  background-color: var(--bs-danger);
+} */
+
+.headerwrapperdiv .plaintable {
+  /* min-height: 150px; */
+  /* background-color: var(--bs-primary); */
+}
+
+.headerlinksdiv2 {
+  /* display: none; */
+
+}
+
+.rightaligntext {
+   display: none; 
+}
+
+.menulinkdesctext {
+  padding: 2px 16px;
+}
+
+body.campuspipeline,
+table td.pldefault,
+table td.dddefault,
+table td.dedefault,
+table td.delabel,
+table td.ddlabel,
+table td.deheader,
+table th.ddheader,
+.errortext,
+.captiontext {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.0em
+}
+
+
+a,
+a:link,
+a:visited,
+a.submenulinktext1,
+a.submenulinktext1:visited,
+a.submenulinktext2
+/* main 186835 */
+  {
+  color: var(--bs-primary);
+  text-decoration: none;
+  /* border: 1px solid var(--bs-primary);
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 5px; */
+}
+
+a.submenulinktext2:visited {
+  color: var(--bs-indigo);
+}
+
+a:hover,
+a:active,
+a:focus,
+a.submenulinktext1:hover,
+a.submenulinktext1:active,
+a.submenulinktext1:focus,
+a.submenulinktext2:hover,
+a.submenulinktext2:active,
+a.submenulinktext2:focus {
+  color: #FFFFFF;
+  background-color: #c6d12f;
+}
+
+.infotextdiv {
+  font-weight: normal;
+  font-weight: 200;
+}
+
+table.infotexttable {
+  font-size: 0.8em;
+}
+
+.infotext {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.0em;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.mpdefault>a.submenulinktext2 {
+  display: list-item;
+  /* This has to be "list-item"                                               */
+  list-style-type: disc;
+  /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside;
+}
+
+.datadisplaytable>tbody>tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+a.skiplinks {
+  color: black;
+  text-align: left;
+  display: none;
+  float: right;
+  position: absolute;
+  left: 15px;
+}
+
+
+
+span.fieldOrangetextbold {
+  font-weight: bold;
+  font-size: 1.0em;
+  color: var(--bs-primary);
+}
+
+.fieldlabeltext {
+  /* font-weight: bold; */
+  font-size: 1.0em;
+  color: var(--bs-primary);
+  float: right;
+  text-decoration: none;
+}
+
+/* alternating row color */
+span.warningtext {
+  color: #990000;
+  font-size: 1.1em;
+}
+
+/* PAGE HEADER OVERRIDES */
+/*========================================================================*/
+
+/*========================================================================*/
+
+
+
+/*div.pageheaderdiv1 
+{
+  background:url("../horizontal_ksa.png")no-repeat top ;
+  background-size:580px;
+  margin-left:10px;
+  display:block;
+  height: 200px;
+  max-height: 1800px;
+  width: auto;
+} */
+
+
+
+
+/* just for HMRT */
+div.pageheaderdiv1 h1 {
+  padding-top: 50px;
+  display: none;
+}
+
+div.pageheaderdiv1 a {
+  display: none;
+}
+
+div.headerlinksdiv p {
+  display: none;
+}
+
+
+td.tabon,
+td.taboff {
+  background-image: none;
+  font-weight: bold;
+  font-size: 22px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #5f48c4;
+  padding: 5px 8px 0;
+}
+
+td.tabon {
+  background-color: #5f48c4;
+  border: 1px solid #502d0e;
+  color: #ffffff;
+}
+
+td.tabon a {
+  color: #c5d12e;
+}
+
+td.taboff {
+  background-color: #5f48c4;
+  border: 1px solid #7d6a55;
+}
+
+td.taboff:hover {
+  background-color: #c5d12e;
+  color: #ffffff !important;
+}
+
+td.taboff a,
+td.taboff a:hover,
+td.taboff a:active {
+  color: #ffffff !important;
+}
+
+td.bgtabon,
+td.bgtaboff {
+  background-color: #ffffff;
+  border-bottom: 1px solid #502d0e;
+
+}
+
+td.bgtabon img,
+td.bgtaboff img {
+  display: none;
+}
+
+/* search block */
+.headerlinksdiv2 {
+  /* background-color:#ffffff; */
+  padding:5px;
+}
+
+hr {
+  color: var(--bs-primary);
+}
+
+
+/* page title */
+.pagetitlediv {
+  background-color: #FFFFFF;
+}
+
+.pagetitlediv td .rightaligntext .staticheaders {
+  display: none;
+}
+
+
+.pagetitlediv td h2 {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+  text-align: center;
+  /* margin: 0; */
+  margin-right: 5%;
+}
+
+
+.pagetitlediv td.bg3 {
+  background-color: var(--bs-primary);
+}
+
+.pagetitlediv td.bg3 img {
+  display: none;
+}
+
+
+/* body or main content tables */
+td.mpdefault {
+  font-size: 1.25em !important;
+}
+
+td.mpdefault span.menulinkdesctext {
+  font-size: .6em;
+  line-height: 1.6em;
+}
+
+/* prospect page */
+td.indefault img.headerImg {
+  display: none;
+}
+
+.requiredmsgtext,
+.fieldrequiredtext {
+  color: #cc0000;
+  font-weight: bold;
+  padding: 0 4px;
+}
+
+.requiredmsgtext {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.pagefooterdiv {
+  display: none;
+}
+
+.captiontext {
+  font-style: normal;
+  font-weight: normal;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.45em;
+  color: #5f48c4;
+}
+
+table td.delabel,
+table th.delabel,
+table td.ddlabel,
+table th.ddlabel,
+table td.ddtitle,
+table td.detitle,
+table th.ddtitle,
+table th.detitle,
+table td.deheader,
+table td.dddefault {
+  vertical-align: middle;
+  text-align: right;
+  font-size: 1em;
+  padding: 2px 8px 2px 0px;
+}
+
+table th.ddheader {
+  vertical-align: middle;
+  font-size: 1.2em;
+  padding: 2px 8px 2px 0px;
+}
+
+table td.dedefault,
+table td.dddefault {
+  vertical-align: middle;
+}
+
+table td.dddefault {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+
+table th.ddheader,
+table th.detitle,
+table th.ddtitle,
+table th.delabel,
+table td.ddlabel,
+table th.ddlabel {
+  background-color: #e2e2e2;
+  text-decoration: none;
+  border: none;
+}
+
+table.datadisplaytable {
+  border-spacing: 0px 0px;
+  margin-bottom: 15px;
+  background-color: #e2e2e2;
+  padding: 6px;
+  margin: 0px;
+}
+
+table.datadisplaytable td,
+.datadisplaytable td p {
+  vertical-align: middle;
+  margin: 2px 8px 2px 0px;
+  padding: 3px;
+}
+
+/* general form element styles */
+input,
+textarea,
+select {
+  font-weight: normal;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: right;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #d0d0d0;
+  border-radius: .25rem
+}
+
+input[type='text'],
+input[type='password'], input[type='email'] {
+  padding: 5px 4px;
+  margin: 0 5px 0 0;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #d0d0d0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  margin: 6px 4px;
+  position: relative;
+  top: 2px;
+}
+
+textarea {
+  width: 98%;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border: 1px solid #d0d0d0;
+}
+
+input[name="KEYWRD_IN"] {
+  width: auto;
+}
+
+input {
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: var(--bs-primary);
+  border: solid 1px  var(--bs-primary);
+  padding: 10px 20px 10px 20px;
+  margin: 20px 0px;
+  width: auto;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--bs-font-sans-serif);
+}
+
+input[type="submit"].Resizable {
+  width: auto;
+}
+
+input[type='reset'],
+input.button,
+button {
+  cursor: pointer;
+  background-color: var(--bs-secondary);
+  border: solid 1px  var(--bs-secondary);
+  padding: 6px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--bs-dark);
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  border: 1px solid var(--bs-secondary);
+  position: relative;
+  top: -1px;
+}
+
+.pagebodydiv p a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  margin-right: 0px;
+  /* font-size: 24px; */
+}
+
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+input.button:hover,
+button:hover,
+input[type='submit']:active,
+input[type='reset']:active,
+input.button:active,
+button:active {
+  background-color: #c6d12f;
+  text-decoration: none;
+  border: 1px solid #c6d12f;
+}
+
+
+
+
+
+
+.headerlinksdiv td,
+.headerlinksdiv td {
+  display: block !important;
+
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-left: 5px !important;
+  margin-bottom: 5px;
+  border-bottom: 0px solid #7d6a55;
+}
+
+.headerlinksdiv td.bgtabon,
+.headerlinksdiv td.bgtaboff,
+.plaintable td.bgtabon,
+.plaintable td.bgtaboff {
+  display: none !important;
+}
+
+.headerlinksdiv table table,
+.plaintable table {
+  width: 95%;
+
+}
+
+
+/*================================================================ */
+
+.pagebodydiv {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  width: auto;
+  max-width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+
+.pagebodydiv {
+  padding: 80px 20px 5px 20px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.2);
+  border: solid 1px var(--bs-primary);
+  border-radius: 10px;
+  width: auto;
+  min-width: 300px;
+  max-width: 450px;
+  height: auto;
+  min-height: 150px;
+  background: url('img/logo-nbu-dar-small.png') no-repeat scroll right 40px top 20px;
+}
+
+
+
+select {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 5px 0 5px 0;
+  height: 1.7em;
+  font-size: 100%;
+}
+
+
+
+
+table.dataentrytable td {
+  padding: 3px;
+}
+
+.RightAlign {
+  text-align: right;
+}
+
+table.dataentrytable {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+
+
+.releasetext {
+  display: none
+}
+
+
+
+
+
+
+.pageheaderlinks {
+  /* Exit and help link */
+  /* display: none; */
+  position: absolute;
+  left: 5px;
+  width: 160px;
+  color: #ffffff;
+}
+
+.pageheaderlinks a {
+  color: #ffffff;
+
+}
+
+div.banner_copyright {
+  background-color: var(--bs-primary);
+  color: white;
+  /* background-size: 100px; */
+  display: block;
+  height: 50px;
+  max-height: 50px;
+  margin: 0 0 0 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.banner_copyright h5 {
+  margin-top: -5px;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6 {
+  display: none;
+  visibility: hidden;
+}
+
+/* -- //Responsive code -- */
+
+@media only screen and (max-width: 812px) {
+
+
+  .pagebodydiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    display: block;
+    width: auto;
+    max-width: auto;
+    ;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: auto
+  }
+
+  div.banner_copyright {
+
+    color: transparent;
+    background-size: 10px;
+    display: block;
+    height: 10%;
+    max-height: 20%;
+    background: url('/css/images/archive/nbu.svg') no-repeat center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pagebodydiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    display: block;
+    width: auto;
+    max-width: auto;
+    ;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: auto
+  }
+
+  div.banner_copyright {
+
+    color: transparent;
+    background-size: 10px;
+    display: block;
+    height: 10%;
+    max-height: 20%;
+    background: url('/css/images/archive/nbu.svg') no-repeat center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+
+  .pagebodydiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    display: block;
+    width: auto;
+    max-width: auto;
+    ;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: auto
+  }
+
+  div.banner_copyright {
+
+    color: transparent;
+    background-size: 10px;
+    display: block;
+    height: 10%;
+    max-height: 20%;
+    background: url('/css/images/archive/nbu.svg') no-repeat center;
+  }
+}
